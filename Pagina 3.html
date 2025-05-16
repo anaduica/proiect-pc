@@ -1,0 +1,92 @@
+<!-- Pagina 3 -->
+<html>
+<head>
+    <title>Specificații - Giulia Quadrifoglio</title>
+    <style>
+        body {
+            background-image: url('190225_alfa-romeo_tributo-piloti_01.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #000;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        table, th, td {
+            border: 2px solid #000;
+            border-collapse: collapse;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+         a {
+            color: rgb(96, 101, 191);
+        }
+    </style>
+    <script>
+        function clickCounter() {
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML =
+                    "Ai apăsat de " + localStorage.clickcount + " ori.";
+            } else {
+                document.getElementById("result").innerHTML =
+                    "Browserul tău nu suportă Web Storage...";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="info-box">
+        <h1>Specificații Tehnice</h1>
+        <table>
+            <tr><th>Specificație</th><th>Valoare</th></tr>
+            <tr><td>Putere</td><td>510 CP</td></tr>
+            <tr><td>Accelerație 0-100 km/h</td><td>3.9 secunde</td></tr>
+            <tr><td>Viteză maximă</td><td>307 km/h</td></tr>
+        </table>
+
+        <h2>Termeni cheie</h2>
+        <dl>
+            <dt>CP</dt><dd>Cai Putere</dd>
+            <dt>Bi-Turbo</dt><dd>Sistem cu două turbine pentru presiune crescută</dd>
+        </dl>
+
+        <h2>Canvas</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 200, 100);
+        </script>
+
+        <h2>Sunet motor</h2>
+        <audio controls>
+             <source src="Alfa Romeo Giulia Quadrifoglio_ engine sound.mp3#t=6" type="audio/mpeg">
+             Browserul tău nu suportă elementul audio.
+        </audio>
+
+        <h2>Video YouTube</h2>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/VfCPRg7h47A" frameborder="0" allowfullscreen></iframe>
+
+        <h2>Web Storage</h2>
+        <button onclick="clickCounter()">Apasă-mă</button>
+        <div id="result"></div>
+
+        <h2>Design cu dungi laterale</h2>
+        <img src="alfa-romeo-giulia-quadrifoglio-side-over-the-top-stripes-exact-factory-fit_550.jpeg" width="500" alt="Design sportiv">
+
+        <p><a href="Pagina 1.html">Înapoi la pagina principală</a></p>
+    </div>
+</body>
+</html>

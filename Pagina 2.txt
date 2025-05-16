@@ -1,0 +1,46 @@
+<!-- Pagina 2 -->
+<html>
+<head>
+    <title>Performanță - Giulia Quadrifoglio</title>
+    <style>
+        body {
+            background-image: url('alfa_romeo_giulia_quadrifoglio_alfa_romeo_racing_2019_4k_2-HD.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .highlight {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+         a {
+            color: rgb(96, 101, 191);
+        }
+    </style>
+</head>
+<body>
+    <h1>Performanță și Design</h1>
+    <p>Giulia Quadrifoglio este echipată cu un motor V6 bi-turbo de 2.9 litri care dezvoltă 510 CP.</p>
+
+    <img src="alfa romeo giulia quadrifoglio.png" width="400">
+
+    <h2>Top 3 motive să alegi Giulia Quadrifoglio:</h2>
+    <ol>
+        <li>Performanță excelentă</li>
+        <li>Design italian pur</li>
+        <li>Tehnologie avansată</li>
+    </ol>
+
+    <p class="highlight">De-a lungul anilor, Alfa Romeo a fost sinonimă cu succesul în motorsport, iar modelul Giulia Quadrifoglio continuă această tradiție prin inginerie de precizie și eleganță inconfundabilă.</p>
+
+    <p>
+        <a href="Pagina 1.html">Pagina principală</a> |
+        <a href="Pagina 3.html">Specificații</a>
+    </p>
+</body>
+</html>
